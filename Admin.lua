@@ -1,4 +1,11 @@
-function bsoUGSpoWJMuTotiboNVQjnsOGpadgkBGpvhndUcJCKCRWlITAwkPwuyybibCeabEwQWCfcCHZTCqJceQCjVdTTFESaSkFDCX(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/400)end return res end 
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function WngZYMLuzTdbzkpvmNwjoABHoTlnFPkaCnkLQTTrPcCIKByzVGyWPeAfkBLeCYzEEwQRRUanwFqorLKaQmXqD(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
 
 
-loadstring(game:HttpGet(bsoUGSpoWJMuTotiboNVQjnsOGpadgkBGpvhndUcJCKCRWlITAwkPwuyybibCeabEwQWCfcCHZTCqJceQCjVdTTFESaSkFDCX({41600,46400,46400,44800,46000,23200,18800,18800,44800,38800,46000,46400,40400,39200,42000,44000,18400,39600,44400,43600,18800,35600,38800,46400,44000,45200,29600,31200,46800})))()    
+ 
+
+
+loadstring(game:HttpGet(WngZYMLuzTdbzkpvmNwjoABHoTlnFPkaCnkLQTTrPcCIKByzVGyWPeAfkBLeCYzEEwQRRUanwFqorLKaQmXqD('QFhwhNUKCpdJlIEweGpdtJisRdGvOVXFZKLWDarPEofimFOkIkbPureaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L1lhdG5xSk51')))()
+    
